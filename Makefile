@@ -45,3 +45,4 @@ clean:
 .PHONY: test
 test: all $(TEST_PREREQS)
 	script/test_runner.zsh $(TESTS)
+	bundle exec rspec
